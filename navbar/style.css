@@ -1,0 +1,71 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar styles */
+.nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav h1 {
+    margin: 0;
+}
+
+.nav .options ul,
+.nav .social-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav .options ul li,
+.nav .social-icons li {
+    margin-left: 20px;
+}
+
+.nav .options ul li a,
+.nav .social-icons li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.45rem;
+    display: inline-block;
+}
+
+.nav .social-icons li a {
+    font-size: 1.2rem;
+}
+
+.nav .options ul li a:hover,
+.nav .social-icons li a:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+    .nav .options ul,
+    .nav .social-icons {
+        flex-direction: column;
+    }
+    .nav .options ul li,
+    .nav .social-icons li {
+        margin: 10px 0;
+    }
+}

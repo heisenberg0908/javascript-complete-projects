@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.faq-section h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.toggle-answer-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer {
+    display: none; /* Initially hide answers */
+    padding-top: 10px;
+}
+
+.answer p {
+    margin: 0;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+/* Optional: Add styles for hover effects on buttons for better user interaction */
+.toggle-answer-btn:hover {
+    opacity: 0.9;
+}
